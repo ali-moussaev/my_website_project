@@ -274,6 +274,29 @@ section h2 {
     background: rgba(33, 150, 243, 0.1);
 }
 
+.project-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.project-card li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+    transition: var(--transition);
+}
+
+.project-card li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+}
+
+.project-card li:hover {
+    color: var(--accent-color);
+}
+
 /* Certifications Grid */
 .cert-grid {
     display: grid;
