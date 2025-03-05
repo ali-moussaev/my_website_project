@@ -1,29 +1,116 @@
-body {
-    font-family: Arial, sans-serif;
+/* Variables CSS */
+:root {
+    --primary-color: #1a73e8;
+    --secondary-color: #4285f4;
+    --text-color: #333;
+    --background-color: #f0f2f5;
+    --white: #ffffff;
+    --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+/* Reset et styles de base */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #f0f2f5;
 }
 
+/* Header */
+header {
+    padding: 2rem 0;
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+}
+
+/* Main content */
+main {
+    flex: 1;
+    padding: 2rem 0;
+}
+
+/* Container */
 .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
     text-align: center;
-    padding: 2rem;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Sections */
+section {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Typography */
 h1 {
-    color: #1a73e8;
+    color: var(--primary-color);
+    font-size: 2.5rem;
     margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+h2 {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
 }
 
 p {
-    color: #333;
-    line-height: 1.6;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--white);
+    padding: 2rem 0;
+    margin-top: auto;
+    box-shadow: var(--shadow);
+}
+
+footer p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .container {
+        padding: 0 0.5rem;
+    }
+    
+    section {
+        padding: 1.5rem;
+    }
 }
