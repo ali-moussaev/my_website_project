@@ -471,10 +471,12 @@ section h2 {
     background: rgba(33, 150, 243, 0.05);
     padding: 1.5rem;
     border-radius: 8px;
+    box-shadow: var(--shadow);
     transition: var(--transition);
-    height: 100%;
     display: flex;
     flex-direction: column;
+    height: 100%;
+    min-height: 320px;
     position: relative;
     overflow: hidden;
 }
@@ -513,17 +515,18 @@ section h2 {
 .project-card ul {
     list-style: none;
     padding-left: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     flex-grow: 1;
 }
 
 .project-card li {
     position: relative;
     padding-left: 0;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
     transition: var(--transition);
     display: flex;
     align-items: center;
+    font-size: 0.9rem;
 }
 
 .project-card li::before {

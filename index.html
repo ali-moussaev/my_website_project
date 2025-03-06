@@ -127,7 +127,18 @@
                         <ul>
                             <li><i class="fab fa-python"></i> Python</li>
                             <li><i class="fas fa-database"></i> SQL</li>
-                            <li><i class="fab fa-java"></i> Java</li>
+                            <li><i class="fas fa-code-branch"></i> Object Pascal</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fab fa-python"></i> Bibliothèques Python</h3>
+                        <ul>
+                            <li><i class="fas fa-table"></i> Pandas</li>
+                            <li><i class="fas fa-chart-bar"></i> NumPy / Matplotlib</li>
+                            <li><i class="fas fa-brain"></i> Scikit-learn</li>
+                            <li><i class="fas fa-database"></i> SQLAlchemy</li>
+                            <li><i class="fas fa-fire"></i> PySpark</li>
+                            <li><i class="fas fa-stream"></i> Apache Airflow</li>
                         </ul>
                     </div>
                     <div class="skill-category">
@@ -135,7 +146,7 @@
                         <ul>
                             <li><i class="fab fa-git-alt"></i> Git</li>
                             <li><i class="fab fa-microsoft"></i> Visual Studio Code & Cursor</li>
-                            <li><i class="fab fa-java"></i> Eclipse</li>
+                            <li><i class="fas fa-laptop-code"></i> Embarcadero Delphi</li>
                             <li><i class="fas fa-server"></i> Bases de données relationnelles</li>
                         </ul>
                     </div>
@@ -210,6 +221,19 @@
                         </ul>
                         <p class="project-link"><a href="https://github.com/Ali-Moussaev/myproject_pipelineETL" target="_blank"><i class="fab fa-github"></i> Voir sur GitHub</a></p>
                     </div>
+                    
+                    <div class="project-card">
+                        <h3><i class="fas fa-project-diagram"></i> Analyse des Ventes</h3>
+                        <p>Architecture Docker à deux services (Python + SQLite) pour l'analyse de données de ventes avec ETL automatisé</p>
+                        <ul>
+                            <li><i class="fab fa-docker"></i> Architecture multi-conteneurs Docker</li>
+                            <li><i class="fas fa-database"></i> ETL et stockage avec SQLite</li>
+                            <li><i class="fas fa-chart-line"></i> Visualisations et rapports analytiques</li>
+                            <li><i class="fas fa-cogs"></i> Pipeline de données automatisé</li>
+                            <li><i class="fas fa-code-branch"></i> Séparation des responsabilités (app/db)</li>
+                        </ul>
+                        <p class="project-link"><a href="https://github.com/ali-moussaev/myproject_simplonBrief" target="_blank"><i class="fab fa-github"></i> Voir sur GitHub</a></p>
+                    </div>
                 </div>
             </section>
         </div>
@@ -242,39 +266,169 @@
                 pdfHeader.removeChild(downloadButton);
             }
             
+            // Optimiser la mise en page pour le PDF
+            const photoPlaceholder = pdfContent.querySelector('.photo-placeholder');
+            if (photoPlaceholder) {
+                photoPlaceholder.style.width = '120px';
+                photoPlaceholder.style.height = '120px';
+                photoPlaceholder.style.margin = '0 auto 10px auto';
+            }
+            
+            // Ajuster les marges et espacements
+            const sections = pdfContent.querySelectorAll('section');
+            sections.forEach(section => {
+                section.style.marginBottom = '10px';
+                section.style.padding = '10px';
+                section.style.pageBreakInside = 'avoid';
+            });
+            
+            // Optimiser les projets pour le PDF
+            const projectCards = pdfContent.querySelectorAll('.project-card');
+            projectCards.forEach(card => {
+                card.style.padding = '10px';
+                card.style.marginBottom = '10px';
+                card.style.pageBreakInside = 'avoid';
+            });
+            
+            // Ajuster la taille des titres
+            const h2Elements = pdfContent.querySelectorAll('h2');
+            h2Elements.forEach(h2 => {
+                h2.style.fontSize = '14pt';
+                h2.style.marginBottom = '8px';
+            });
+            
+            const h3Elements = pdfContent.querySelectorAll('h3');
+            h3Elements.forEach(h3 => {
+                h3.style.fontSize = '12pt';
+                h3.style.marginBottom = '5px';
+            });
+            
             // Appliquer des styles spécifiques pour le PDF
             const styleForPDF = document.createElement('style');
             styleForPDF.textContent = `
-                body { font-size: 10pt; }
-                header { padding: 1.5rem 0; }
-                .container { padding: 0 1rem; }
-                section { margin-bottom: 1rem; padding: 1rem; }
-                .projects-grid { grid-template-columns: repeat(3, 1fr); }
-                .project-card { margin-bottom: 0.5rem; }
-                footer { display: none; }
+                @page {
+                    margin: 15mm 10mm;
+                }
+                body {
+                    font-family: 'Arial', sans-serif;
+                    font-size: 10pt;
+                    line-height: 1.3;
+                    color: #333;
+                }
+                header {
+                    padding: 10px 0;
+                    margin-bottom: 15px;
+                }
+                .container {
+                    padding: 0;
+                    max-width: 100%;
+                }
+                .header-content {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                .header-info {
+                    flex: 1;
+                }
+                .contact-info {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 5px;
+                }
+                .contact-item {
+                    min-width: auto;
+                    max-width: none;
+                    margin: 0;
+                    padding: 3px 8px;
+                }
+                section {
+                    background-color: #fff;
+                    border: 1px solid #e0e0e0;
+                    border-radius: 5px;
+                    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+                }
+                .timeline-item {
+                    margin-bottom: 8px;
+                    padding-bottom: 8px;
+                }
+                .skills-grid {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 10px;
+                }
+                .skill-category {
+                    margin-bottom: 5px;
+                }
+                .projects-grid {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 10px;
+                }
+                .project-card {
+                    background-color: #f9f9f9;
+                }
+                ul {
+                    margin: 5px 0;
+                    padding-left: 20px;
+                }
+                li {
+                    margin-bottom: 3px;
+                }
+                p {
+                    margin: 3px 0;
+                }
+                footer {
+                    display: none;
+                }
+                .social-links-header {
+                    margin-top: 5px;
+                }
+                .profile p {
+                    text-align: justify;
+                }
             `;
             pdfContent.appendChild(styleForPDF);
             
             // Options pour html2pdf
             const options = {
-                margin: [10, 10, 10, 10],
+                margin: [0, 0, 0, 0],
                 filename: 'CV_Ali_Moussaev.pdf',
                 image: { type: 'jpeg', quality: 1 },
                 html2canvas: { 
                     scale: 2, 
                     useCORS: true,
-                    letterRendering: true
+                    letterRendering: true,
+                    logging: false
                 },
                 jsPDF: { 
                     unit: 'mm', 
                     format: 'a4', 
                     orientation: 'portrait',
-                    compress: true
-                }
+                    compress: true,
+                    precision: 16
+                },
+                pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
             };
             
+            // Afficher un message de chargement
+            const loadingMessage = document.createElement('div');
+            loadingMessage.style.position = 'fixed';
+            loadingMessage.style.top = '50%';
+            loadingMessage.style.left = '50%';
+            loadingMessage.style.transform = 'translate(-50%, -50%)';
+            loadingMessage.style.padding = '20px';
+            loadingMessage.style.background = 'rgba(0,0,0,0.7)';
+            loadingMessage.style.color = 'white';
+            loadingMessage.style.borderRadius = '10px';
+            loadingMessage.style.zIndex = '9999';
+            loadingMessage.textContent = 'Génération du PDF en cours...';
+            document.body.appendChild(loadingMessage);
+            
             // Générer le PDF
-            html2pdf().set(options).from(pdfContent).save();
+            html2pdf().set(options).from(pdfContent).save().then(() => {
+                document.body.removeChild(loadingMessage);
+            });
         });
     </script>
 </body>
