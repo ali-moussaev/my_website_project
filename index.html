@@ -25,8 +25,6 @@
                 <div class="header-info">
                     <h1>Ali Moussaev</h1>
                     <div class="subtitle-info">
-                        <h2>Futur Data Engineer</h2>
-                        <span class="age"><i class="fas fa-birthday-cake"></i> 24 ans</span>
                     </div>
                     <div class="contact-info">
                         <div class="contact-item">
@@ -41,6 +39,10 @@
                             <i class="fas fa-map-marker-alt"></i>
                             <p>Clermont-Ferrand, France</p>
                         </div>
+                        <div class="contact-item">
+                            <i class="fas fa-birthday-cake"></i>
+                            <p>24 ans</p>
+                        </div>
                     </div>
                     <div class="social-links-header">
                         <div class="social-link-item">
@@ -50,6 +52,10 @@
                         <div class="social-link-item">
                             <i class="fab fa-github"></i>
                             <a href="https://github.com/Ali-Moussaev" target="_blank">Mon GitHub</a>
+                        </div>
+                        <div class="social-link-item">
+                            <i class="fas fa-file-pdf"></i>
+                            <a href="#" id="download-pdf" title="Télécharger en PDF">Télécharger CV</a>
                         </div>
                     </div>
                 </div>
@@ -61,8 +67,8 @@
         <div class="container">
             <!-- Profil Professionnel -->
             <section class="profile">
-                <h2>Profil professionnel</h2>
-                <p>Jeune informaticien de <strong>24 ans</strong>, diplômé de l'<strong>Université Clermont Auvergne</strong> en Licence Informatique, je me réoriente vers le métier de Data Engineer, en mettant l'accent sur l'intelligence artificielle. Mon parcours universitaire et ma première expérience en développement logiciel m'ont permis d'acquérir des compétences solides dans l'ingénierie des données et le traitement des flux d'informations. Basé à <strong>Clermont-Ferrand</strong>, je suis désormais déterminé à appliquer ces connaissances dans des projets innovants. Ma curiosité pour l'IA et mon désir de concevoir des solutions performantes me poussent à explorer de nouvelles approches pour répondre aux enjeux complexes des entreprises. Rigoureux et orienté résultats, je cherche à contribuer activement à l'évolution du secteur de la data et de l'intelligence artificielle.</p>
+                <h2>Profil et objectifs professionnels</h2>
+                <p>Jeune informaticien de <strong>24 ans</strong>, titulaire d'un bac+2 en informatique de l'<strong>Université Clermont Auvergne</strong>, je me spécialise dans le <strong>Data Engineering</strong> avec un intérêt marqué pour l'intelligence artificielle. Passionné par les technologies émergentes, notamment le machine learning, la gestion et l'analyse de données, je maîtrise des outils et langages tels que <strong>Python, SQL, PostgreSQL, MongoDB, Apache Spark, Power BI et Docker</strong>. Actuellement engagé dans un cursus <strong>Bac+5</strong> en partenariat avec <strong>Simplon</strong>, je vise à devenir <strong>Architecte Big Data</strong>, un rôle clé dans la conception et la gestion d'infrastructures de données massives. Mon objectif est d'intégrer une entreprise innovante pour contribuer à des projets stimulants, en appliquant mes compétences techniques à des solutions concrètes tout en développant continuellement mon expertise.</p>
             </section>
 
             <!-- Formation -->
@@ -89,17 +95,6 @@
                 <h2>Expérience Professionnelle</h2>
                 <div class="timeline">
                     <div class="timeline-item">
-                        <h3><i class="fas fa-laptop-code"></i> Programmation automobile et reprographie moteur</h3>
-                        <p class="company">Freelance</p>
-                        <p class="period">2024 - 2025 (1 an et 3 mois)</p>
-                        <ul>
-                            <li><i class="fas fa-microchip"></i> Reprogrammation de calculateurs moteur</li>
-                            <li><i class="fas fa-car"></i> Optimisation des performances automobiles</li>
-                            <li><i class="fas fa-tachometer-alt"></i> Diagnostic et résolution de problèmes électroniques</li>
-                            <li><i class="fas fa-tools"></i> Personnalisation de cartographies moteur</li>
-                        </ul>
-                    </div>
-                    <div class="timeline-item">
                         <h3><i class="fas fa-code"></i> Développeur Logiciel (Alternance)</h3>
                         <p class="company">ACD Groupe - Tours</p>
                         <p class="period">2023 - 3 mois</p>
@@ -108,6 +103,17 @@
                             <li><i class="fas fa-users"></i> Collaboration avec l'équipe de développement</li>
                             <li><i class="fas fa-comments"></i> Participation aux réunions de projet</li>
                             <li><i class="fas fa-graduation-cap"></i> Apprentissage des méthodologies de développement en entreprise</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item">
+                        <h3><i class="fas fa-laptop-code"></i> Programmation automobile et reprographie moteur</h3>
+                        <p class="company">Freelance</p>
+                        <p class="period">2024 - 2025 (1 an et 3 mois)</p>
+                        <ul>
+                            <li><i class="fas fa-microchip"></i> Reprogrammation de calculateurs moteur</li>
+                            <li><i class="fas fa-car"></i> Optimisation des performances automobiles</li>
+                            <li><i class="fas fa-tachometer-alt"></i> Diagnostic et résolution de problèmes électroniques</li>
+                            <li><i class="fas fa-tools"></i> Personnalisation de cartographies moteur</li>
                         </ul>
                     </div>
                 </div>
@@ -212,12 +218,65 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Ali Moussaev - Future Data Engineer</p>
+            <p>&copy; 2024 Ali Moussaev - Futur data engineer</p>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/ali-moussaev-617185267/" target="_blank">LinkedIn</a>
                 <a href="https://github.com/Ali-Moussaev" target="_blank">GitHub</a>
             </div>
         </div>
     </footer>
+    
+    <!-- Script pour générer le PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script>
+        document.getElementById('download-pdf').addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Créer une copie du document pour le PDF
+            const pdfContent = document.createElement('div');
+            pdfContent.innerHTML = document.querySelector('header').outerHTML + document.querySelector('main').outerHTML;
+            
+            // Supprimer le bouton de téléchargement dans la copie
+            const pdfHeader = pdfContent.querySelector('.social-links-header');
+            const downloadButton = pdfContent.querySelector('.social-link-item:has(#download-pdf)');
+            if (downloadButton) {
+                pdfHeader.removeChild(downloadButton);
+            }
+            
+            // Appliquer des styles spécifiques pour le PDF
+            const styleForPDF = document.createElement('style');
+            styleForPDF.textContent = `
+                body { font-size: 10pt; }
+                header { padding: 1.5rem 0; }
+                .container { padding: 0 1rem; }
+                section { margin-bottom: 1rem; padding: 1rem; }
+                .projects-grid { grid-template-columns: repeat(3, 1fr); }
+                .project-card { margin-bottom: 0.5rem; }
+                footer { display: none; }
+            `;
+            pdfContent.appendChild(styleForPDF);
+            
+            // Options pour html2pdf
+            const options = {
+                margin: [10, 10, 10, 10],
+                filename: 'CV_Ali_Moussaev.pdf',
+                image: { type: 'jpeg', quality: 1 },
+                html2canvas: { 
+                    scale: 2, 
+                    useCORS: true,
+                    letterRendering: true
+                },
+                jsPDF: { 
+                    unit: 'mm', 
+                    format: 'a4', 
+                    orientation: 'portrait',
+                    compress: true
+                }
+            };
+            
+            // Générer le PDF
+            html2pdf().set(options).from(pdfContent).save();
+        });
+    </script>
 </body>
 </html>
