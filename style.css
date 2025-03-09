@@ -124,8 +124,20 @@ header h1 {
 .subtitle-info {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     gap: 1.5rem;
     margin-bottom: 1.5rem;
+}
+
+.role-title {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #e1f5fe;
+    margin: 0.3rem 0 1rem 0;
+    letter-spacing: 0.5px;
+    text-align: left;
+    font-weight: 400;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 header h2 {
@@ -253,48 +265,46 @@ header h2 {
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;
-        text-align: center;
-        gap: 2rem;
+        gap: 1.5rem;
     }
-    
+
     header h1, header h2 {
         text-align: center;
     }
-    
+
     .subtitle-info {
-        flex-direction: column;
-        gap: 0.8rem;
-        align-items: center;
+        justify-content: center;
     }
     
+    .role-title {
+        width: 100%;
+        text-align: center;
+    }
+
     .age {
-        margin-bottom: 1rem;
+        margin: 0 auto;
     }
     
     .contact-info {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-        max-width: 300px;
-        margin: 0 auto 1rem auto;
+        justify-content: center;
+        margin-top: 1rem;
     }
     
     .contact-item {
-        justify-content: flex-start;
-        margin: 0 auto;
         min-width: 250px;
-        max-width: 300px;
+        max-width: 100%;
+        margin: 0 auto;
         width: 100%;
+        justify-content: center;
     }
     
     .social-links-header {
-        justify-content: center;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
     }
     
     .social-link-item:has(#download-pdf) {
-        margin-left: 0;
-        margin-top: 1rem;
+        margin-top: 1.5rem;
     }
 }
 
