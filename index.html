@@ -8,6 +8,9 @@
     <meta name="author" content="Ali Moussaev">
     <meta name="robots" content="index, follow">
     <title>CV Data Engineer - Ali Moussaev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -18,7 +21,7 @@
                 <div class="profile-photo">
                     <!-- Photo de profil -->
                     <div class="photo-placeholder">
-                        <img src="img.jpg" alt="Ali Moussaev" class="profile-image">
+                        <img src="img.png" alt="Ali Moussaev" class="profile-image">
                     </div>
                 </div>
                 <div class="header-info">
@@ -82,7 +85,6 @@
                         <h3>Licence Informatique</h3>
                         <p class="school">Université Clermont Auvergne</p>
                         <p class="period">2021 - 2023</p>
-                        <p>Licence informatique avec spécialisation en :</p>
                         <ul> 
                             <li>Développement logiciel</li>
                             <li>Bases de données</li>
@@ -200,90 +202,42 @@
             <!-- Projets -->
             <section class="projects">
                 <h2>Projets Personnels</h2>
-                <div class="projects-grid">
+                <div class="projects-list">
                     <div class="project-card">
-                        <h3><i class="fas fa-laptop-code"></i> Portfolio en ligne</h3>
-                        <p>Création d'un CV web responsive avec HTML/CSS</p>
+                        <h3>Analyse des ventes</h3>
+                        <p class="tech-stack">Python, Docker, PostgreSQL, pandas, Git</p>
                         <ul>
-                            <li><i class="fab fa-html5"></i> Développement en HTML5/CSS3</li>
-                            <li><i class="fas fa-mobile-alt"></i> Design moderne et adaptatif</li>
-                            <li><i class="fas fa-tablet-alt"></i> Optimisation pour tous les appareils</li>
-                            <li><i class="fab fa-github"></i> Déploiement sur GitHub Pages</li>
-                            <li><i class="fas fa-globe"></i> Configuration DNS avec OVH</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="project-card">
-                        <h3><i class="fas fa-database"></i> Data Warehouse ETL</h3>
-                        <p>Entrepôt de données complet avec pipeline ETL pour analyse de données de ventes</p>
-                        <ul>
-                            <li><i class="fas fa-exchange-alt"></i> Pipeline ETL robuste (Extract, Transform, Load)</li>
-                            <li><i class="fas fa-chart-bar"></i> Analyses automatisées et visualisations</li>
-                            <li><i class="fas fa-server"></i> Base de données PostgreSQL avec modèle en étoile</li>
-                            <li><i class="fas fa-clock"></i> Automatisation des mises à jour planifiées</li>
-                            <li><i class="fas fa-chart-line"></i> Tableaux de bord décisionnels</li>
-                        </ul>
-                        <p class="project-link"><a href="https://github.com/ali-moussaev/my_data_warehouse_project" target="_blank"><i class="fab fa-github"></i> Voir sur GitHub</a></p>
-                    </div>
-                    
-                    <div class="project-card">
-                        <h3><i class="fas fa-cloud-sun-rain"></i> Weather Project</h3>
-                        <p>Script Python pour récupérer les données météo en temps réel</p>
-                        <ul>
-                            <li><i class="fab fa-python"></i> Développement en Python</li>
-                            <li><i class="fas fa-cloud"></i> Utilisation de l'API OpenWeatherMap</li>
-                            <li><i class="fas fa-file-csv"></i> Stockage des données en CSV</li>
-                            <li><i class="fas fa-globe-americas"></i> Données de plusieurs capitales mondiales</li>
-                        </ul>
-                        <p class="project-link"><a href="https://github.com/Ali-Moussaev/my-dataengineer-weather_project" target="_blank"><i class="fab fa-github"></i> Voir sur GitHub</a></p>
-                    </div>
-                    
-                    <div class="project-card">
-                        <h3><i class="fas fa-users-cog"></i> Mini CRM Project</h3>
-                        <p>Mini CRM pour traiter et valider des fichiers CSV utilisateurs</p>
-                        <ul>
-                            <li><i class="fas fa-broom"></i> Nettoyage et validation de données</li>
-                            <li><i class="fas fa-database"></i> Stockage optimisé en SQLite</li>
-                            <li><i class="fas fa-check-circle"></i> Garantie d'intégrité des données</li>
-                            <li><i class="fas fa-file-csv"></i> Traitement de fichiers CSV</li>
-                        </ul>
-                        <p class="project-link"><a href="https://github.com/Ali-Moussaev/my-dataengineer-miniCRM_project" target="_blank"><i class="fab fa-github"></i> Voir sur GitHub</a></p>
-                    </div>
-                    
-                    <div class="project-card">
-                        <h3><i class="fas fa-exchange-alt"></i> Pipeline ETL</h3>
-                        <p>Pipeline ETL pour l'analyse des salaires en Data Science</p>
-                        <ul>
-                            <li><i class="fas fa-file-import"></i> Extraction de données</li>
-                            <li><i class="fas fa-cogs"></i> Transformation automatique</li>
-                            <li><i class="fas fa-dollar-sign"></i> Conversion USD/EUR</li>
-                            <li><i class="fas fa-chart-bar"></i> Génération de rapports statistiques</li>
-                        </ul>
-                        <p class="project-link"><a href="https://github.com/Ali-Moussaev/myproject_pipelineETL" target="_blank"><i class="fab fa-github"></i> Voir sur GitHub</a></p>
-                    </div>
-                    
-                    <div class="project-card">
-                        <h3><i class="fas fa-project-diagram"></i> Analyse des Ventes</h3>
-                        <p>Architecture Docker à deux services (Python + SQLite) pour l'analyse de données de ventes avec ETL automatisé</p>
-                        <ul>
-                            <li><i class="fab fa-docker"></i> Architecture multi-conteneurs Docker</li>
-                            <li><i class="fas fa-database"></i> ETL et stockage avec SQLite</li>
-                            <li><i class="fas fa-chart-line"></i> Visualisations et rapports analytiques</li>
-                            <li><i class="fas fa-cogs"></i> Pipeline de données automatisé</li>
-                            <li><i class="fas fa-code-branch"></i> Séparation des responsabilités (app/db)</li>
+                            <li>Architecture multi-conteneurs Docker</li>
+                            <li>ETL et stockage avec SQLite</li>
+                            <li>Visualisations et rapports analytiques</li>
+                            <li>Pipeline de données automatisé</li>
+                            <li>Séparation des responsabilités (app/db)</li>
                         </ul>
                         <p class="project-link"><a href="https://github.com/ali-moussaev/myproject_simplonBrief" target="_blank"><i class="fab fa-github"></i> Voir sur GitHub</a></p>
                     </div>
                     
                     <div class="project-card">
-                        <h3><i class="fas fa-globe-europe"></i> Scraper technique</h3>
-                        <p>Scrapper avancé qui extrait, traite et visualise des données sur les pays européens depuis Wikipédia</p>
+                        <h3>Data Warehouse ETL</h3>
+                        <p class="tech-stack">Python, PostgreSQL, pandas, numpy, Git</p>
                         <ul>
-                            <li><i class="fas fa-search"></i> Extraction et traitement automatisé des données</li>
-                            <li><i class="fas fa-database"></i> Enrichissement avec coordonnées géographiques et données économiques</li>
-                            <li><i class="fas fa-chart-bar"></i> Visualisations interactives et statiques</li>
-                            <li><i class="fas fa-file-code"></i> Génération de rapports HTML personnalisables</li>
-                            <li><i class="fas fa-clock"></i> Automatisation et archivage des données</li>
+                            <li>Pipeline ETL robuste (Extract, Transform, Load)</li>
+                            <li>Analyses automatisées et visualisations</li>
+                            <li>Base de données PostgreSQL avec modèle en étoile</li>
+                            <li>Automatisation des mises à jour planifiées</li>
+                            <li>Tableaux de bord décisionnels</li>
+                        </ul>
+                        <p class="project-link"><a href="https://github.com/ali-moussaev/my_data_warehouse_project" target="_blank"><i class="fab fa-github"></i> Voir sur GitHub</a></p>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>Scraper technique</h3>
+                        <p class="tech-stack">Python, PostgreSQL, pandas, Git, HTML/CSS, beautifulsoup4, Power BI</p>
+                        <ul>
+                            <li>Extraction et traitement automatisé des données</li>
+                            <li>Enrichissement avec coordonnées géographiques et données économiques</li>
+                            <li>Visualisations interactives et statiques</li>
+                            <li>Génération de rapports HTML personnalisables</li>
+                            <li>Automatisation et archivage des données</li>
                         </ul>
                         <p class="project-link"><a href="https://github.com/ali-moussaev/myproject_scrapper" target="_blank"><i class="fab fa-github"></i> Voir sur GitHub</a></p>
                     </div>
