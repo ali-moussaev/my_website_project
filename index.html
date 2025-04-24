@@ -7,12 +7,90 @@
     <meta name="keywords" content="Data Engineer, CV, Ingénierie des données, Big Data, ETL">
     <meta name="author" content="Ali Moussaev">
     <meta name="robots" content="index, follow">
-    <title>CV Data Engineer - Ali Moussaev</title>
+    <title>CV RH- Ali Moussaev</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        header {
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+        .header-content {
+            flex-direction: row;
+            text-align: left;
+            gap: 1.5rem;
+        }
+        .profile-photo {
+            flex: 0 0 150px;
+        }
+        .photo-placeholder {
+            width: 150px;
+            height: 150px;
+        }
+        .header-info {
+            align-items: flex-start;
+        }
+        .contact-info {
+            margin-bottom: 0.5rem;
+            justify-content: flex-start;
+            align-items: flex-start;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        .contact-item {
+            margin: 0.1rem 0;
+            min-width: auto;
+            max-width: none;
+            justify-content: flex-start;
+        }
+        .contact-item i {
+            width: 20px;
+            text-align: center;
+            margin-right: 8px;
+        }
+        .role-title {
+            margin: 0 0 0.5rem 0;
+        }
+        .social-links-header {
+            margin-top: 0.25rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        .social-link-item {
+            justify-content: flex-start;
+            padding: 0.2rem 0.4rem;
+            min-width: auto;
+        }
+        .social-link-item i {
+            width: 20px;
+            text-align: center;
+            margin-right: 8px;
+        }
+        .social-link-item a {
+            font-size: 0.95rem;
+        }
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .header-info {
+                align-items: center;
+            }
+            .contact-info {
+                justify-content: center;
+            }
+            .contact-item, .social-link-item {
+                justify-content: center;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -27,7 +105,7 @@
                 <div class="header-info">
                     <h1>Ali Moussaev</h1>
                     <div class="subtitle-info">
-                        <p class="role-title"> Développeur Full Stack / Data Engineer en devenir</p>
+                        <p class="role-title"> A la recherche d'une alternance en RH</p>
                     </div>
                     <div class="contact-info">
                         <div class="contact-item">
@@ -43,8 +121,8 @@
                             <p>Clermont-Ferrand, France</p>
                         </div>
                         <div class="contact-item">
-                            <i class="fas fa-birthday-cake"></i>
-                            <p>24 ans</p>
+                            <i class="fas fa-car"></i>
+                            <p>Permis B & véhiculé.</p>
                         </div>
                     </div>
                     <div class="social-links-header">
@@ -55,6 +133,14 @@
                         <div class="social-link-item">
                             <i class="fab fa-github"></i>
                             <a href="https://github.com/Ali-Moussaev" target="_blank">Mon GitHub</a>
+                        </div>
+                        <div class="social-link-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <a href="#portfolio" target="_blank">Projet 1</a>
+                        </div>
+                        <div class="social-link-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <a href="#data-warehouse" target="_blank">Projet 2</a>
                         </div>
                     </div>
                 </div>
@@ -67,20 +153,54 @@
             <!-- Profil Professionnel -->
             <section class="profile">
                 <h2>Profil et objectifs professionnels</h2>
-                <p>Jeune informaticien de 24 ans, titulaire d'un Bac+2 en informatique de <strong>l'Université Clermont Auvergne</strong>, je souhaite devenir <strong>concepteur et développeur de logiciels</strong>, 
-                avec une appétence particulière pour la <strong>data</strong> et <strong>l'intelligence artificielle</strong>. <br>
-                Passionné par les technologies émergentes, notamment le machine learning, la gestion et l'analyse de données, 
-                je maîtrise plusieurs outils et langages, dont <strong>Python, Django, SQL, PostgreSQL, MongoDB, Apache Spark, Power BI et Docker</strong>. <br>
-                À partir d'octobre 2025, je m'engagerai dans un cursus Bac+5 en partenariat avec Simplon, visant à devenir concepteur et développeur de logiciels 
-                ou data engineer, un rôle clé dans la conception et la gestion d'infrastructures de données massives.
-                Mon objectif est d'intégrer une entreprise innovante afin de contribuer à des projets stimulants en appliquant mes compétences techniques à des 
-                solutions concrètes, tout en développant continuellement mon expertise.</p>
+                <p>Jeune professionnel titulaire d'un Bac+2 en informatique de <strong><u>l'Université Clermont Auvergne</u></strong>, je souhaite devenir <strong><u>Responsable SIRH</u></strong> (Système d'Information des Ressources Humaines), 
+                alliant mes compétences techniques et mon intérêt pour <strong><u>les ressources humaines</u></strong> et <strong><u>la gestion de paie</u></strong>. <br>
+                Rigoureux, organisé et doté d'un excellent sens de l'analyse, je possède une solide maîtrise des outils informatiques et une forte capacité d'adaptation aux nouvelles technologies.
+                Ma formation en informatique m'a permis de développer des compétences en <strong><u>bases de données, analyse de données et développement de solutions</u></strong>, 
+                atouts essentiels pour la digitalisation des processus RH. <br>
+                À partir de septembre, je m'engagerai dans un cursus Bac+3 en ressources humaines à <strong><u>l'ALFAE</u></strong>, avec une spécialisation en SIRH.
+                Particulièrement attiré par la <strong><u>gestion de la paie</u></strong>, la <strong><u>GPEC</u></strong> et le <strong><u>reporting social</u></strong>, je souhaite contribuer à l'optimisation
+                des processus RH en alliant expertise technique et connaissance des enjeux humains. Mon sens de l'écoute, ma discrétion et mon esprit d'équipe 
+                sont des qualités que je mets au service d'une gestion RH efficace et humaine.</p>
             </section>
 
             <!-- Formation -->
             <section class="education">
-                <h2>Formation</h2>
+                <h2>Formations & Scolarité</h2>
                 <div class="timeline">
+                    <div class="timeline-item">
+                        <h3><i class="fas fa-user-tie"></i> Formation en Ressources Humaines</h3>
+                        <p class="school">OpenClassrooms</p>
+                        <p class="period">2025 - En cours</p>
+                        <ul> 
+                            <li>Gestion des ressources humaines</li>
+                            <li>Droit du travail</li>
+                            <li>Administration du personnel</li>
+                            <li>SIRH et digitalisation RH</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item">
+                        <h3><i class="fas fa-calculator"></i> Formation Gestionnaire de Paie</h3>
+                        <p class="school">OpenClassrooms</p>
+                        <p class="period">2025 - En cours</p>
+                        <ul> 
+                            <li>Élaboration et contrôle des bulletins de paie</li>
+                            <li>Gestion des charges sociales et fiscales</li>
+                            <li>Utilisation de logiciels de paie</li>
+                            <li>Veille juridique et sociale</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item">
+                        <h3><i class="fas fa-calculator"></i> Formation Gestionnaire de Paie en Interne</h3>
+                        <p class="school">ACD Groupe</p>
+                        <p class="period">2023 - 3 mois</p>
+                        <ul> 
+                            <li>Maîtrise de la suite ACD Paie</li>
+                            <li>Paramétrage et administration du logiciel</li>
+                            <li>Traitement des dossiers de paie complexes</li>
+                            <li>Gestion des spécificités conventionnelles</li>
+                        </ul>
+                    </div>
                     <div class="timeline-item">
                         <h3>Licence Informatique</h3>
                         <p class="school">Université Clermont Auvergne</p>
@@ -97,28 +217,28 @@
 
             <!-- Expérience Professionnelle -->
             <section class="experience">
-                <h2>Expérience Professionnelle</h2>
+                <h2>Expériences Professionnelles</h2>
                 <div class="timeline">
                     <div class="timeline-item">
-                        <h3><i class="fas fa-code"></i> Développeur Logiciel (Alternance)</h3>
-                        <p class="company">ACD Groupe - Tours</p>
-                        <p class="period">2023 - 3 mois</p>
+                        <h3><i class="fas fa-heart"></i> Bénévolat en Ressources Humaines / Gestionnaire de Paie</h3>
+                        <p class="company">Association L'Ouverture - Clermont-Ferrand</p>
+                        <p class="period">2024 - 2025 (1 an et 3 mois)</p>
                         <ul>
-                            <li><i class="fas fa-laptop-code"></i> Développement et maintenance d'applications logicielles</li>
-                            <li><i class="fas fa-users"></i> Collaboration avec l'équipe de développement</li>
-                            <li><i class="fas fa-comments"></i> Participation aux réunions de projet</li>
-                            <li><i class="fas fa-graduation-cap"></i> Apprentissage des méthodologies de développement en entreprise</li>
+                            <li><i class="fas fa-file-invoice"></i> Gestion des bulletins de paie des salariés de l'association</li>
+                            <li><i class="fas fa-users-cog"></i> Administration du personnel et suivi des contrats</li>
+                            <li><i class="fas fa-calendar-alt"></i> Gestion des plannings et des congés</li>
+                            <li><i class="fas fa-chart-line"></i> Reporting social et indicateurs RH</li>
                         </ul>
                     </div>
                     <div class="timeline-item">
-                        <h3><i class="fas fa-laptop-code"></i> Programmation automobile et reprographie moteur</h3>
-                        <p class="company">Freelance</p>
-                        <p class="period">2024 - 2025 (1 an et 3 mois)</p>
+                        <h3><i class="fas fa-code"></i> Développeur Logiciel (Alternance)</h3>
+                        <p class="company">ACD Groupe (Éditeur de logiciels de paie) - Tours</p>
+                        <p class="period">2023 - 3 mois</p>
                         <ul>
-                            <li><i class="fas fa-microchip"></i> Reprogrammation de calculateurs moteur</li>
-                            <li><i class="fas fa-car"></i> Optimisation des performances automobiles</li>
-                            <li><i class="fas fa-tachometer-alt"></i> Diagnostic et résolution de problèmes électroniques</li>
-                            <li><i class="fas fa-tools"></i> Personnalisation de cartographies moteur</li>
+                            <li><i class="fas fa-laptop-code"></i> Développement et maintenance d'applications de gestion de paie</li>
+                            <li><i class="fas fa-users"></i> Collaboration avec l'équipe de développement</li>
+                            <li><i class="fas fa-comments"></i> Participation aux réunions de projet</li>
+                            <li><i class="fas fa-graduation-cap"></i> Apprentissage des méthodologies de développement en entreprise</li>
                         </ul>
                     </div>
                 </div>
@@ -126,8 +246,32 @@
 
             <!-- Compétences Techniques -->
             <section class="skills">
-                <h2>Compétences Techniques</h2>
+                <h2>Compétences Techniques & Soft skills</h2>
                 <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-user-cog"></i> Compétences SIRH & Paie</h3>
+                        <ul>
+                            <li><i class="fas fa-calculator"></i> Élaboration et contrôle des bulletins de paie</li>
+                            <li><i class="fas fa-file-invoice-dollar"></i> Déclarations sociales et fiscales</li>
+                            <li><i class="fas fa-chart-line"></i> Tableaux de bord sociaux et reporting RH</li>
+                            <li><i class="fas fa-balance-scale"></i> Veille juridique et sociale</li>
+                            <li><i class="fas fa-users-cog"></i> Administration du personnel</li>
+                            <li><i class="fas fa-digital-tachograph"></i> Digitalisation des processus RH</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-heart"></i> Soft Skills</h3>
+                        <ul>
+                            <li><i class="fas fa-clipboard-check"></i> Rigueur et sens de l'organisation</li>
+                            <li><i class="fas fa-user-secret"></i> Confidentialité et discrétion</li>
+                            <li><i class="fas fa-headset"></i> Écoute active</li>
+                            <li><i class="fas fa-comments"></i> Communication interpersonnelle</li>
+                            <li><i class="fas fa-chart-pie"></i> Analyse et synthèse</li>
+                            <li><i class="fas fa-users"></i> Travail en équipe</li>
+                            <li><i class="fas fa-hands-helping"></i> Esprit de service</li>
+                            <li><i class="fas fa-project-diagram"></i> Gestion de projet</li>
+                        </ul>
+                    </div>
                     <div class="skill-category">
                         <h3><i class="fas fa-code"></i> Langages de Programmation</h3>
                         <ul>
@@ -135,66 +279,8 @@
                             <li><i class="fab fa-java"></i> Java</li>
                             <li><i class="fas fa-database"></i> SQL</li>
                             <li><i class="fas fa-code-branch"></i> Object Pascal</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fab fa-python"></i> Bibliothèques Python</h3>
-                        <ul>
-                            <li><i class="fas fa-table"></i> Pandas</li>
-                            <li><i class="fas fa-chart-bar"></i> NumPy / Matplotlib</li>
-                            <li><i class="fas fa-brain"></i> Scikit-learn</li>
-                            <li><i class="fas fa-database"></i> SQLAlchemy</li>
-                            <li><i class="fas fa-fire"></i> PySpark</li>
-                            <li><i class="fas fa-stream"></i> Apache Airflow</li>
-                            <li><i class="fas fa-database"></i> psycopg2</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-tools"></i> Outils & Technologies</h3>
-                        <ul>
-                            <li><i class="fab fa-git-alt"></i> Git</li>
-                            <li><i class="fab fa-microsoft"></i> Visual Studio Code & Cursor</li>
-                            <li><i class="fas fa-laptop-code"></i> Embarcadero Delphi</li>
-                            <li><i class="fas fa-server"></i> Bases de données relationnelles</li>
-                            <li><i class="fas fa-globe"></i> OVH (Gestion de domaines)</li>
-                            <li><i class="fas fa-database"></i> PostgreSQL</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-warehouse"></i> Data Engineering</h3>
-                        <ul>
-                            <li><i class="fas fa-database"></i> Data Warehousing</li>
-                            <li><i class="fas fa-exchange-alt"></i> ETL (Extract, Transform, Load)</li>
-                            <li><i class="fas fa-project-diagram"></i> Modélisation de données (Star Schema)</li>
-                            <li><i class="fas fa-chart-line"></i> Business Intelligence</li>
-                            <li><i class="fas fa-tasks"></i> Planification de tâches automatisées</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-graduation-cap"></i> En cours d'apprentissage</h3>
-                        <ul>
-                            <li><i class="fas fa-fire"></i> Apache Spark</li>
-                            <li><i class="fas fa-wind"></i> Apache Airflow</li>
-                            <li><i class="fab fa-docker"></i> Docker</li>
-                            <li><i class="fas fa-cloud"></i> Cloud (AWS/Azure)</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-cloud-upload-alt"></i> Hébergement & Déploiement</h3>
-                        <ul>
-                            <li><i class="fas fa-globe"></i> OVH (Domaines & DNS)</li>
-                            <li><i class="fab fa-github"></i> GitHub Pages</li>
-                            <li><i class="fas fa-server"></i> Configuration de serveurs web</li>
-                            <li><i class="fas fa-lock"></i> Gestion des certificats SSL</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-user-plus"></i> Soft Skills</h3>
-                        <ul>
-                            <li><i class="fas fa-users"></i> Travail en équipe</li>
-                            <li><i class="fas fa-book-reader"></i> Capacité d'apprentissage</li>
-                            <li><i class="fas fa-puzzle-piece"></i> Résolution de problèmes</li>
-                            <li><i class="fas fa-comments"></i> Communication</li>
+                            <li><i class="fab fa-html5"></i> HTML5/CSS3</li> <!-- Ajouté -->
+                            <li><i class="fab fa-js"></i> JavaScript</li> <!-- Ajouté -->
                         </ul>
                     </div>
                 </div>
@@ -205,7 +291,7 @@
                 <h2>Projets Personnels</h2>
                 <div class="projects-list">
                     <div class="project-card">
-                        <h3>Portfolio en ligne</h3>
+                        <h3>Portfolio en ligne (ce site même)</h3>
                         <p class="tech-stack">HTML, CSS, JavaScript, Git</p>
                         <ul>
                             <li>Développement en HTML5/CSS3</li>
@@ -228,68 +314,6 @@
                         </ul>
                         <p class="project-link"><a href="https://github.com/ali-moussaev/my_data_warehouse_project" target="_blank"><i class="fab fa-github"></i> Voir sur GitHub</a></p>
                     </div>
-                    
-                    <div class="project-card">
-                        <h3>Weather & OpenWeatherMap</h3>
-                        <p class="tech-stack">Python, APIs REST, pandas, CSV</p>
-                        <ul>
-                            <li>Développement en Python</li>
-                            <li>Utilisation de l'API OpenWeatherMap</li>
-                            <li>Stockage des données en CSV</li>
-                            <li>Données de plusieurs capitales mondiales</li>
-                        </ul>
-                        <p class="project-link"><a href="https://github.com/Ali-Moussaev/my-dataengineer-weather_project" target="_blank"><i class="fab fa-github"></i> Voir sur GitHub</a></p>
-                    </div>
-                    
-                    <div class="project-card">
-                        <h3>Mini CRM</h3>
-                        <p class="tech-stack">Python, SQLite, pandas, CSV</p>
-                        <ul>
-                            <li>Nettoyage et validation de données</li>
-                            <li>Stockage optimisé en SQLite</li>
-                            <li>Garantie d'intégrité des données</li>
-                            <li>Traitement de fichiers CSV</li>
-                        </ul>
-                        <p class="project-link"><a href="https://github.com/Ali-Moussaev/my-dataengineer-miniCRM_project" target="_blank"><i class="fab fa-github"></i> Voir sur GitHub</a></p>
-                    </div>
-                    
-                    <div class="project-card">
-                        <h3>Pipeline ETL</h3>
-                        <p class="tech-stack">Python, pandas, matplotlib, API</p>
-                        <ul>
-                            <li>Extraction de données</li>
-                            <li>Transformation automatique</li>
-                            <li>Conversion USD/EUR</li>
-                            <li>Génération de rapports statistiques</li>
-                        </ul>
-                        <p class="project-link"><a href="https://github.com/Ali-Moussaev/myproject_pipelineETL" target="_blank"><i class="fab fa-github"></i> Voir sur GitHub</a></p>
-                    </div>
-                    
-                    <div class="project-card">
-                        <h3>Analyse des Ventes</h3>
-                        <p class="tech-stack">Python, Docker, PostgreSQL, pandas, Git</p>
-                        <ul>
-                            <li>Architecture multi-conteneurs Docker</li>
-                            <li>ETL et stockage avec SQLite</li>
-                            <li>Visualisations et rapports analytiques</li>
-                            <li>Pipeline de données automatisé</li>
-                            <li>Séparation des responsabilités (app/db)</li>
-                        </ul>
-                        <p class="project-link"><a href="https://github.com/ali-moussaev/myproject_simplonBrief" target="_blank"><i class="fab fa-github"></i> Voir sur GitHub</a></p>
-                    </div>
-                    
-                    <div class="project-card">
-                        <h3>Scraper technique</h3>
-                        <p class="tech-stack">Python, PostgreSQL, pandas, Git, HTML/CSS, beautifulsoup4, Power BI</p>
-                        <ul>
-                            <li>Extraction et traitement automatisé des données</li>
-                            <li>Enrichissement avec coordonnées géographiques et données économiques</li>
-                            <li>Visualisations interactives et statiques</li>
-                            <li>Génération de rapports HTML personnalisables</li>
-                            <li>Automatisation et archivage des données</li>
-                        </ul>
-                        <p class="project-link"><a href="https://github.com/ali-moussaev/myproject_scrapper" target="_blank"><i class="fab fa-github"></i> Voir sur GitHub</a></p>
-                    </div>
                 </div>
             </section>
         </div>
@@ -297,7 +321,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Ali Moussaev - Développeur Full Stack / Data Engineer en devenir </p>
+            <p>&copy; 2025 Ali Moussaev - SIRH en devenir </p>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/ali-moussaev-617185267" target="_blank">LinkedIn</a>
                 <a href="https://github.com/Ali-Moussaev" target="_blank">GitHub</a>
